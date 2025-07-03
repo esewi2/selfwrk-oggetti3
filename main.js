@@ -23,7 +23,7 @@ let bowling = {
         let newPlayer = {name: nome, scores: []}
         for(let i = 1; i <= 10; i++){
             newPlayer.scores.push(Math.floor(Math.random()*(10-1+1)+1))
-        }
+        };
 
         this.players.push(newPlayer)
         console.log(newPlayer.scores);
@@ -58,7 +58,7 @@ let bowling = {
 }
 
 bowling.creaPunteggio()
-bowling.nuovoGiocatore()
+bowling.nuovoGiocatore(`Simone`)
 bowling.punteggioFinale()
 bowling.vincitore()
 bowling.classifica()
